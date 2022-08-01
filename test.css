@@ -42,12 +42,12 @@ body {
 }
 
 .batton_div {
-  margin-left: 27%;
+  text-align: center;
 }
 .batton {
   display: inline-block;
-  margin-top: 20px;
-  margin-left: 20%;
+  /* margin-top: 20px;
+  margin-left: 20%; */
 
   font-size: 18px;
   text-decoration: none;
@@ -69,35 +69,78 @@ body {
   background: #f4f4f4;
   text-align: center;
 }
+.sectionC {
+}
 
 .box2 {
-  background: #f9f9f9;
+  padding: 20px;
+  /* background: #f9f9f9; */
+  min-height: 130px;
   width: 33%;
-  height: 83px;
+  background-color: white;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
+  background-origin: padding-box;
 }
 
 .box3,
 .box1 {
-  background: #926239;
-  color: #fff;
+  padding: 20px;
+  min-height: 130px;
+  color: white;
   width: 33%;
-  height: 83px;
+  background-color: #926239;
   display: inline-block;
   text-align: center;
   background-origin: padding-box;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px) {
-  .batton_div {
-    margin-left: 24%;
+@media screen and (max-width: 1000px) {
+  .sectionC {
+    display: flex;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .sectionA {
+    display: flex;
+  }
+  .sectionB {
+    display: flex;
+  }
+  .header {
+    background-position: right;
   }
 }
-@media screen and (max-width: 600px) {
-  .batton_div {
-    margin-left: 19%;
+
+@media screen and (max-width: 500px) {
+  .sectionC {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    display: flex;
+    background-position: right;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+  }
+  .h1 {
+    font-size: 35px;
   }
 }
